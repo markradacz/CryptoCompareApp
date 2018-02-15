@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="CryptoCompare.Views.CoinDetailPage"
+    >
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Add to favorites" Clicked="Add_Clicked" />
+    </ContentPage.ToolbarItems>
+	<ContentPage.Content>
+ <ScrollView Padding="10">
+            <StackLayout HorizontalOptions="CenterAndExpand">
+     <StackLayout
+            HorizontalOptions="FillAndExpand"
+            Orientation="Vertical"
+            Spacing="10"
+            Padding="10"
+            IsVisible="{Binding IsBusy}">
+      <ActivityIndicator
+          HorizontalOptions="Center"
+          Color="#9C27B0"
+          IsRunning="{Binding IsBusy}"
+          IsVisible="{Binding IsBusy}"/>
+      <Label HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   Text="Loading..."/>
+    </StackLayout>
+    <StackLayout Spacing="10" IsVisible="{Binding IsNotBusy}">
+      <Image Source="{Binding CoinDetails.Data.Seo.ImageUrl}" HeightRequest="200" WidthRequest="200"/>
+      
+      <Label Text="{Binding CoinDetails.Data.General.H1Text}" FontSize="24"/>
+      <Label Text="{Binding CoinDetails.Data.General.NoHtmlDescription}"/>
+
+      <Button Text="Speak" x:Name="ButtonSpeak" Clicked="ButtonSpeak_Clicked"/>
+      <Button Text="Go to Website" x:Name="ButtonWebsite" Command="{Binding OpenWebCommand}"/>
+    </StackLayout> 
+                </StackLayout>
+  </ScrollView>
+	</ContentPage.Content>
+</ContentPage>
