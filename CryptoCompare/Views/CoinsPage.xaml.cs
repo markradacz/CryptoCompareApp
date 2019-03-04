@@ -22,7 +22,7 @@ namespace CryptoCompare.Views
             if (item == null)
                 return;
 
-            await Navigation.PushAsync(new CoinDetailPage(item.Id));
+            await Navigation.PushAsync(new CoinDetailPage(item.Id.ToString()));
 
             // Manually deselect item
             CoinListView.SelectedItem = null;

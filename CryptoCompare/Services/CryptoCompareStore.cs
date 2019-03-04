@@ -26,10 +26,18 @@ namespace CryptoCompare
             items = new List<Coin>();
         }
 
+
+        private void SetHeaders()
+        {
+            client.DefaultRequestHeaders.Clear();
+            client.DefaultRequestHeaders.Add("api_key", "b58aba59291df7a3b95d8d61217d0eedd3be3cf7d9cc519d98a436ecacad67d4");
+        }
+
         public async Task<IEnumerable<Coin>> GetItemsAsync(bool forceRefresh = false)
         {
             if (forceRefresh && CrossConnectivity.Current.IsConnected)
             {
+                SetHeaders();
                 var json = await client.GetStringAsync($"https://min-api.cryptocompare.com/data/all/coinlist");
                 clResult = await Task.Run(() => JsonConvert.DeserializeObject<CoinListResult>(json, Converter.Settings));//JsonConvert.DeserializeObject<IEnumerable<Item1>>(json));
                 var coins = new List<Coin>();
@@ -48,6 +56,7 @@ namespace CryptoCompare
         {
             if (id != null && CrossConnectivity.Current.IsConnected)
             {
+                SetHeaders();
                 var json = await client.GetStringAsync($"https://www.cryptocompare.com/api/data/coinsnapshotfullbyid/?id={id}");
                 return await Task.Run(() => JsonConvert.DeserializeObject<Coin>(json));
             }
@@ -121,6 +130,7 @@ namespace CryptoCompare
 
             if (id != null && CrossConnectivity.Current.IsConnected)
             {
+                SetHeaders();
                 var json = await client.GetStringAsync($"https://www.cryptocompare.com/api/data/coinsnapshotfullbyid/?id={id}");
                 result = await Task.Run(() => JsonConvert.DeserializeObject<CoinDetailsResponse>(json, Converter.Settings));
             }
@@ -134,6 +144,7 @@ namespace CryptoCompare
             IEnumerable<Item1> items = new List<Item1>();
             if (forceRefresh && CrossConnectivity.Current.IsConnected)
             {
+                SetHeaders();
                 var json = await client.GetStringAsync($"https://api.coinmarketcap.com/v1/ticker/?limit=100");
                 items = await Task.Run(() => JsonConvert.DeserializeObject<IEnumerable<Item1>>(json));
             }

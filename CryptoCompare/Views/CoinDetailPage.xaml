@@ -25,10 +25,10 @@
                    Text="Loading..."/>
     </StackLayout>
     <StackLayout Spacing="10" IsVisible="{Binding IsNotBusy}">
-      <Image Source="{Binding CoinDetails.Data.Seo.ImageUrl}" HeightRequest="200" WidthRequest="200"/>
+      <Image Source="{Binding CoinDetails.Data.General.CoinImage}" HeightRequest="200" WidthRequest="200"/>
       
-      <Label Text="{Binding CoinDetails.Data.General.H1Text}" FontSize="24"/>
-      <Label Text="{Binding CoinDetails.Data.General.NoHtmlDescription}"/>
+      <Label Text="{Binding CoinDetails.Data.General.Name}" FontSize="24"/>
+      <Label Text="{Binding CoinDetails.Data.General.Description}"/>
 
       <Button Text="Speak" x:Name="ButtonSpeak" Clicked="ButtonSpeak_Clicked"/>
       <Button Text="Go to Website" x:Name="ButtonWebsite" Command="{Binding OpenWebCommand}"/>

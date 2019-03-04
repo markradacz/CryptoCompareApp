@@ -1,0 +1,76 @@
+﻿<Properties StartupConfiguration="{252CB487-E24C-45ED-A446-9ED6F74553C4}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="CryptoCompare/ViewModels/CoinDetailViewModel.cs">
+    <Files>
+      <File FileName="iOS/Info.plist" />
+      <File FileName="CryptoCompare/Views/ItemsPage.xaml.cs" Line="7" Column="24" />
+      <File FileName="CryptoCompare/Services/CloudDataStore.cs" Line="17" Column="34" />
+      <File FileName="../../GehaMobile/MyGEHA/Services/AzureDataStore.cs" Line="43" Column="1" />
+      <File FileName="CryptoCompare/Services/CryptoCompareStore.cs" Line="141" Column="1" />
+      <File FileName="CryptoCompare/Models/Coin.cs" Line="160" Column="1" />
+      <File FileName="CryptoCompare/Services/MockDataStore.cs" Line="1" Column="1" />
+      <File FileName="CryptoCompare/ViewModels/ItemsViewModel.cs" Line="34" Column="17" />
+      <File FileName="CryptoCompare/Views/MainPage.cs" Line="16" Column="61" />
+      <File FileName="CryptoCompare/Views/CoinsPage.xaml.cs" Line="25" Column="56" />
+      <File FileName="iOS/AppDelegate.cs" Line="22" Column="1" />
+      <File FileName="iOS/Main.cs" Line="21" Column="1" />
+      <File FileName="CryptoCompare/App.xaml.cs" Line="19" Column="54" />
+      <File FileName="CryptoCompare/ViewModels/CoinDetailViewModel.cs" Line="15" Column="9" />
+      <File FileName="CryptoCompare/Models/CoinDetails.cs" Line="346" Column="32" />
+      <File FileName="CryptoCompare/ViewModels/CoinsViewModel.cs" Line="38" Column="1" />
+      <File FileName="CryptoCompare/Views/CoinDetailPage.xaml.cs" Line="58" Column="27" />
+      <File FileName="CryptoCompare/Views/CoinDetailPage.xaml" Line="32" Column="7" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="CryptoCompare" expanded="True">
+            <Node name="CryptoCompare" expanded="True">
+              <Node name="Models" expanded="True" />
+              <Node name="Services" expanded="True" />
+              <Node name="ViewModels" expanded="True">
+                <Node name="CoinDetailViewModel.cs" selected="True" />
+              </Node>
+              <Node name="Views" expanded="True">
+                <Node name="CoinDetailPage.xaml" expanded="True" />
+                <Node name="CoinsPage.xaml" expanded="True" />
+                <Node name="ItemsPage.xaml" expanded="True" />
+              </Node>
+              <Node name="App.xaml" expanded="True" />
+            </Node>
+            <Node name="CryptoCompare.Droid" expanded="True" />
+            <Node name="CryptoCompare.iOS" expanded="True">
+              <Node name="References" expanded="True" />
+              <Node name="Resources" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.ItemProperties.CryptoCompare.iOS automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.267BE5B8-A417-47D5-BC85-4714B335F0CB" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/marekradacz/Projects/GitHub/CryptoCompareApp/CryptoCompare/Services/CryptoCompareStore.cs" relfile="CryptoCompare/Services/CryptoCompareStore.cs" line="43" column="1" />
+      <Breakpoint file="/Users/marekradacz/Projects/GitHub/CryptoCompareApp/CryptoCompare/Services/CryptoCompareStore.cs" relfile="CryptoCompare/Services/CryptoCompareStore.cs" line="61" column="1" />
+      <Breakpoint file="/Users/marekradacz/Projects/GitHub/CryptoCompareApp/CryptoCompare/Services/CloudDataStore.cs" relfile="CryptoCompare/Services/CloudDataStore.cs" line="44" column="1" />
+      <Breakpoint file="/Users/marekradacz/Projects/GitHub/CryptoCompareApp/CryptoCompare/Services/CloudDataStore.cs" relfile="CryptoCompare/Services/CloudDataStore.cs" line="33" column="1" />
+      <Breakpoint file="/Users/marekradacz/Projects/GitHub/CryptoCompareApp/CryptoCompare/ViewModels/CoinsViewModel.cs" relfile="CryptoCompare/ViewModels/CoinsViewModel.cs" line="36" column="1" />
+      <Breakpoint file="/Users/marekradacz/Projects/GitHub/CryptoCompareApp/CryptoCompare/ViewModels/ItemsViewModel.cs" relfile="CryptoCompare/ViewModels/ItemsViewModel.cs" line="39" column="1" />
+      <Breakpoint file="/Users/marekradacz/Projects/GitHub/CryptoCompareApp/CryptoCompare/Services/CryptoCompareStore.cs" relfile="CryptoCompare/Services/CryptoCompareStore.cs" line="23" column="1" />
+      <Breakpoint file="/Users/marekradacz/Projects/GitHub/CryptoCompareApp/CryptoCompare/Services/CloudDataStore.cs" relfile="CryptoCompare/Services/CloudDataStore.cs" line="21" column="1" />
+      <Breakpoint file="/Users/marekradacz/Projects/GitHub/CryptoCompareApp/CryptoCompare/Services/CryptoCompareStore.cs" relfile="CryptoCompare/Services/CryptoCompareStore.cs" line="149" column="1" />
+      <Breakpoint file="/Users/marekradacz/Projects/GitHub/CryptoCompareApp/CryptoCompare/Services/CryptoCompareStore.cs" relfile="CryptoCompare/Services/CryptoCompareStore.cs" line="135" column="1" />
+      <Breakpoint file="/Users/marekradacz/Projects/GitHub/CryptoCompareApp/CryptoCompare/Services/CryptoCompareStore.cs" relfile="CryptoCompare/Services/CryptoCompareStore.cs" line="32" column="1" />
+      <Breakpoint file="/Users/marekradacz/Projects/GitHub/CryptoCompareApp/CryptoCompare/ViewModels/ItemsViewModel.cs" relfile="CryptoCompare/ViewModels/ItemsViewModel.cs" line="41" column="1" />
+      <Breakpoint file="/Users/marekradacz/Projects/GitHub/CryptoCompareApp/CryptoCompare/ViewModels/CoinsViewModel.cs" relfile="CryptoCompare/ViewModels/CoinsViewModel.cs" line="38" column="1" />
+      <Breakpoint file="/Users/marekradacz/Projects/GitHub/CryptoCompareApp/CryptoCompare/ViewModels/CoinsViewModel.cs" relfile="CryptoCompare/ViewModels/CoinsViewModel.cs" line="51" column="1" />
+      <Breakpoint file="/Users/marekradacz/Projects/GitHub/CryptoCompareApp/CryptoCompare/Views/CoinDetailPage.xaml.cs" relfile="CryptoCompare/Views/CoinDetailPage.xaml.cs" line="64" column="30" />
+      <Breakpoint file="/Users/marekradacz/Projects/GitHub/CryptoCompareApp/CryptoCompare/ViewModels/CoinDetailViewModel.cs" relfile="CryptoCompare/ViewModels/CoinDetailViewModel.cs" line="82" column="1" />
+      <Breakpoint file="/Users/marekradacz/Projects/GitHub/CryptoCompareApp/CryptoCompare/ViewModels/CoinDetailViewModel.cs" relfile="CryptoCompare/ViewModels/CoinDetailViewModel.cs" line="80" column="1" />
+      <Breakpoint file="/Users/marekradacz/Projects/GitHub/CryptoCompareApp/CryptoCompare/Views/CoinsPage.xaml.cs" relfile="CryptoCompare/Views/CoinsPage.xaml.cs" line="21" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

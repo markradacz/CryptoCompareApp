@@ -41,7 +41,7 @@ namespace CryptoCompare.Views
         private void ButtonWebsite_Clicked(object sender, EventArgs e)
         {
             if (ViewModel.CoinDetails.Data != null)
-                Device.OpenUri(new Uri(ViewModel.CoinDetails.Data.General.AffiliateUrl));
+                Device.OpenUri(new Uri(ViewModel.CoinDetails.Data.General.WebsiteUrl.AbsolutePath));
         }
 
         private void ButtonSpeak_Clicked(object sender, EventArgs e)
@@ -63,7 +63,7 @@ namespace CryptoCompare.Views
 
             CrossTextToSpeech.Current.Speak(greeter);
 
-            CrossTextToSpeech.Current.Speak(this.ViewModel.CoinDetails.Data.General.NoHtmlDescription, cancelToken: CancellCurrent.Token);
+            CrossTextToSpeech.Current.Speak(this.ViewModel.CoinDetails.Data.General.Description, cancelToken: CancellCurrent.Token);
         }
 
         protected async override void OnAppearing()

@@ -37,7 +37,7 @@ namespace CryptoCompare.ViewModels
         {
             Title = "Crypto Compare";
             ItemId = id;
-            //LoadItemCommand = new Command(async () => await ExecuteLoadItemCommand());
+            LoadItemCommand = new Command(async () => await LoadItems());
         }
 
         public async Task LoadItems()
@@ -80,7 +80,7 @@ namespace CryptoCompare.ViewModels
         private async Task ExecuteOpenWebCommand()
         {
             if (CoinDetails.Data != null)
-                Device.OpenUri(new Uri(CoinDetails.Data.General.AffiliateUrl));
+                Device.OpenUri(new Uri(CoinDetails.Data.General.WebsiteUrl.AbsolutePath));
         }
     }
 
